@@ -28,7 +28,7 @@ message = f"Subject: Low Price Alert: {price_number} Rupees for {product_title} 
 connection = smtplib.SMTP(host="smtp.gmail.com", port=587)
 connection.starttls()
 connection.login(user=username, password=pasw)
-if price_number <= 1000:
+if price_number <= 700:
     try:
         # Sending email to myself.
         connection.sendmail(
